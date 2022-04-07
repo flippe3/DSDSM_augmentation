@@ -138,7 +138,6 @@ for epoch_i in range(0, epochs):
         model.zero_grad()        
 
         if step % 40 == 0 and not step == 0:            
-            # Report progress.
             print('  Batch {:>5,}  of  {:>5,}'.format(step, len(train_dataloader)))
 
         b_input_ids = batch[0].to(device)
